@@ -23,7 +23,7 @@ interface MetricsClient {
 }
 ```
 
-Depends on the following portions of Restify's RouteSpec interface:
+Depends on the following portions of [Restify's RouteSpec, Request, and Response](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/restify/restify.d.ts) interface:
 * `RouteSpec.path` for the string or RegExp path definition.
 * `RouteSpec.method` for the HTTP verb.
 * `Response.getHeader('Response-Time')` and `Request.time()` as a backup for determining response time.
