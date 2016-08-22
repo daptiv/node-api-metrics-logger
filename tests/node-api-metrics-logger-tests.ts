@@ -1,8 +1,8 @@
 'use strict';
-import { ApiMetricsLogger } from '../src/api-metrics-logger';
+import { ApiMetricsLogger } from '../src/node-api-metrics-logger';
 import { Route, RouteSpec } from 'restify';
 
-describe('api-metrics-logger', () => {
+describe('node-api-metrics-logger', () => {
     let metricsClientSpy;
     let mockRequest;
     let mockResponse;
