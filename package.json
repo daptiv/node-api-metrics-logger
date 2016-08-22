@@ -1,0 +1,51 @@
+{
+  "name": "node-api-metrics-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && npm run typings && gulp build",
+    "clean": "rm -rf ./dist",
+    "postversion": "git push && git push --tags",
+    "prepublish": "npm run clean && npm run build",
+    "test": "gulp test",
+    "typings": "typings install",
+    "watch": "npm run typings && gulp watch"
+  },
+  "engines": {
+    "node": ">=4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daptiv/node-api-metrics-logger.git"
+  },
+  "files": [
+    "dist",
+    "src",
+    "tests",
+    "typings"
+  ],
+  "keywords": [
+    "metrics",
+    "statsd",
+    "api"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daptiv/node-api-metrics-logger/issues"
+  },
+  "homepage": "https://github.com/daptiv/node-api-metrics-logger#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-tslint": "^5.0.0",
+    "gulp-typescript": "^2.13.6",
+    "jasmine": "^2.4.1",
+    "tslint": "^3.8.1",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
+  }
+}
